@@ -31,7 +31,7 @@ Data is currently collected for song and user activities, in two directories: da
   "auth": "Logged In",
   "firstName": "Jayden",
   "gender": "M",
-  "itemInSession": 0,
+  "itemInSession": 0
   "lastName": "Fox",
   "length": 245.36771,
   "level": "free",
@@ -47,3 +47,5 @@ Data is currently collected for song and user activities, in two directories: da
   "userId": "101"
 }
 ```
+## Database Schema
+![ERD](ERD.png)
