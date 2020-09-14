@@ -6,6 +6,23 @@ This project aims to create an ETL pipeline to load song and user data to a Post
 ## A short description:
 To complete the project, you will need to define fact and dimension tables for a star schema for a particular analytic focus, and write an ETL pipeline that transfers data from files in two local directories into the tables in Postgres using Python and SQL.
 
+## Getting started
+
+`python create_tables.py`</br>
+`python etl.py`
+
+## Python scripts
+
+- create_tables.py: Clean previous schema and creates tables.
+- sql_queries.py: All queries used in the ETL pipeline.
+- etl.py: Read JSON logs and JSON metadata and load the data into generated tables.
+- db.py: To setup a connection with database and return connection and cursor objects.
+
+## Jupyter Notebooks
+
+- etl.ipynb: Process one file song and log data into database
+- test.ipynb: Verify the results of any table 
+
 ## Database Schema
 ![ERD](ERD.png)
 - songplays: Records in log data associated with song plays
