@@ -3,13 +3,14 @@ A startup named Sparkify wants to analyze user activities using their song and u
 
 This project aims to create an ETL pipeline to load song and user data to a Postgres database, making it easier to query and analyze data.
 
-# A short description:
+## A short description:
 To complete the project, you will need to define fact and dimension tables for a star schema for a particular analytic focus, and write an ETL pipeline that transfers data from files in two local directories into the tables in Postgres using Python and SQL.
 
-# Datasets
+## Datasets
 Data is currently collected for song and user activities, in two directories: data/log_data and data/song_data, using JSON files.
 
-Song dataset format
+### Song dataset format
+```json
 {
   "num_songs": 1,
   "artist_id": "ARGSJW91187B9B1D6B",
@@ -22,7 +23,9 @@ Song dataset format
   "duration": 218.77506,
   "year": 0
 }
-Log dataset format
+```
+### Log dataset format
+```json
 {
   "artist": "Survivor",
   "auth": "Logged In",
@@ -43,3 +46,4 @@ Log dataset format
   "userAgent": "\"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36\"",
   "userId": "101"
 }
+```
